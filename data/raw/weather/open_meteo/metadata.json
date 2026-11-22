@@ -1,0 +1,41 @@
+{
+    "dataset_name": "Nigde Historical Weather Data",
+    "location": {
+        "name": "Nigde",
+        "latitude": 37.97,
+        "longitude": 34.68
+    },
+    "source": {
+        "provider": "Open-Meteo",
+        "api": "Historical Weather API",
+        "url": "https://archive-api.open-meteo.com/v1/archive",
+        "data_type": "Historical reanalysis data"
+    },
+    "period": {
+        "start_date": "2026-04-01",
+        "end_date": "2026-04-30",
+        "timezone": "Europe/Istanbul"
+    },
+    "variables": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "precipitation"
+    ],
+    "resolution": "hourly",
+    "record_count": 720,
+    "file": "nigde_2026-04.csv",
+    "quality_checks": {
+        "missing_values": 0,
+        "duplicate_timestamps": 0,
+        "irregular_hourly_intervals": 0,
+        "invalid_humidity_values": 0,
+        "negative_precipitation_values": 0,
+        "out_of_range_temperature_values": 0
+    },
+    "notes": [
+        "Data was retrieved from the Open-Meteo Historical Weather API.",
+        "The dataset contains historical reanalysis data, not direct field sensor measurements.",
+        "Relative humidity is not equivalent to leaf wetness.",
+        "Precipitation and relative humidity may be used as indirect indicators in the initial disease risk analysis, subject to scientific validation."
+    ]
+}

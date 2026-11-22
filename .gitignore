@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Test and cache files
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Raw and processed data
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/weather/
+data/raw/weather/*
+!data/raw/weather/open_meteo/
+data/raw/weather/open_meteo/*
+!data/raw/weather/open_meteo/metadata.json
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/external/*
+!data/external/.gitkeep
